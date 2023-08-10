@@ -5,7 +5,7 @@ if __name__ = "__main__":
 a = 10
 b = 5
 
-print("10 + 5", cal.add(a, b))
-print("10 - 5", cal.sub(a, b))
-print("10 * 5", cal.mul(a, b))
-print("10 / 5", cal.div(a, b))
+print(f"{a} + {b}", cal.add(a, b))
+print(f"{a} - {b}", cal.sub(a, b))
+print("{a} * {b}", cal.mul(a, b))
+print("{a} / {b}", cal.div(a, b))
