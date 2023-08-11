@@ -6,8 +6,8 @@ s2 = " and is 0"
 s3 = "and is less than 6 and not 0"
 last_dig = abs(number) % 10
 if last_dig > 5:
-    print("Last digit of {} {}".format(number, s1))
+    print(f"Last digit of {number} {s1}")
 elif last_dig == 0:
-    print("Last digit of {} {}".format(number, s2))
+    print(f"Last digit of {number} {s2}")
 else:
-    print("Last digit of {} {}".format(number, s3))
+    print(f"Last digit of {number} {s3}")
