@@ -5,7 +5,7 @@ if __name__ == "__main__":
         printed_counter = 0
         for item in range(x):
             try:
-                print(item, end=" ")
+                print(my_list[item], end=" ")
                 printed_counter += 1
         except IndexError:
             break
