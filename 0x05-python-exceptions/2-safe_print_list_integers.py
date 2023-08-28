@@ -10,6 +10,5 @@ def safe_print_list_integers(my_list[], x=0):
             pass
         except IndexError as y:
             print("{}".format(y))
-        else:
-            print()
-            return printed_item
+    print()
+    return printed_item
