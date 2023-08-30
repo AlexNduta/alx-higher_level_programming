@@ -4,7 +4,13 @@
 
 class Square:
     """ This class defines the property of the Square object
-        Attribute:
-            size(int): this is the size of our square
+        Attributes:
+            _size(int): this is the size of our square
     """
-    size
+    def __init__(self, size):
+        """Initialises a square
+        Args: 
+            size(int): This is the size of our square
+        returns: None
+        """
+        self._size = size
