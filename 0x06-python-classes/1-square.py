@@ -1,11 +1,11 @@
 #!/bin/python3
-""" Defines a Sauare object"""
+""" Square class definition"""
 
 
 class Square:
     """ This class defines the property of the Square object
         Attributes:
-            _size(int): this is the size of our square
+            _size (int): this is the size of our square
     """
     def __init__(self, size):
         """Initialises a square
