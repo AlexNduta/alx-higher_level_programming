@@ -1,0 +1,35 @@
+This is the test file for the "add_integer()".
+
+We first import it.
+>>> import add_integer from 0-add_interger
+
+>>> add_integer(1,2)
+3
+>>> add_integer(2.5, 3)
+5
+Try out floating numbers.
+>>> add_integer(2.5,3.7)
+5
+
+Try out an integer against a string.
+>>> add_integer("Alex",3.7)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 3, in add_integer
+TypeError: a must be an integer
+
+Try out a string againt a string
+>>> add_integer("Alex","kin")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 3, in add_integer
+TypeError: a must be an integer
+
+Try out zeros
+>>> add_integer(0,0)
+0
+>>> add_integer(-23434567899,-45659098765432)
+-45682533333331
+>>> add_integer(1e100, 1e99)
+11000000000000000126365079901715871742210341749751836862699289337219134618092108923422209854312284160
+

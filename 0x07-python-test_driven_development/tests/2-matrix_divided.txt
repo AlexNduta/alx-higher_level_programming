@@ -1,0 +1,111 @@
+This is a test file for the "matrix_divided()".
+
+we first import our module:
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+SUCCCESS CASES:
+
+TypeError: matrix must be a matrix(list of lists) of integers/floats
+>>> matrix = [[1,2,3,4],[1,3,4,5]]
+>>> matrix_divided(matrix,3)
+[[0.33, 0.67, 1.0, 1.33], [0.33, 1.0, 1.33, 1.67]]
+
+>>> matrix = [[1.9,9.0,1.3],[2,4,5.6]]
+>>> matrix_divided(matrix,3)
+[[0.63, 3.0, 0.43], [0.67, 1.33, 1.87]]
+
+>>> matrix =[[1.2,1.3,1.4,1.5], [1.5,6.7,8.9,8.9]]
+>>> matrix_divided(matrix,3)
+[[0.4, 0.43, 0.47, 0.5], [0.5, 2.23, 2.97, 2.97]]
+
+>>> matrix = [[True],[False]]
+>>> matrix_divided(matrix,True)
+[[1.0], [0.0]]
+
+>>> matrix = [[1,2,3,4],[1,3,4,5]]
+>>> matrix_divided(matrix,2)
+[[0.5, 1.0, 1.5, 2.0], [0.5, 1.5, 2.0, 2.5]]
+
+>>> matrix_divided(matrix,6)
+[[0.17, 0.33, 0.5, 0.67], [0.17, 0.5, 0.67, 0.83]]
+
+>>> matrix_divided(matrix,1)
+[[1.0, 2.0, 3.0, 4.0], [1.0, 3.0, 4.0, 5.0]]
+
+>>> matrix = [[4,6],[8,10]]
+>>> matrix_divided(matrix,2)
+[[2.0, 3.0], [4.0, 5.0]]
+
+    FAIL CASES:
+Test empty matrix:
+>>> matrix_divided(None,2)
+Traceback (most recent call last):
+...
+TypeError: 'NoneType' object is not subscriptable
+
+>>> matrix = []
+>>> matrix_divided(matrix,2)
+Traceback (most recent call last):
+...
+IndexError: list index out of range
+
+    Test different sized lists:
+>>> matrix = [[1, 2, 3], [4, 5, 6], [7]]
+>>> matrix_divided(matrix,2)
+Traceback (most recent call last):
+...
+TypeError: each row of the matrix must have the same size
+
+>>> matrix = [[1, 2, 3], [4]]
+>>> matrix_divided(matrix,2)
+Traceback (most recent call last):
+...
+TypeError: each row of the matrix must have the same size
+
+Test with other data types:
+>>> matrix_divided(matrix,"alex")
+Traceback (most recent call last):
+...
+TypeError: div must be a number
+    
+>>> matrix = [[1, 2], 3, {4, 5}]
+>>> matrix_divided(matrix,2)
+Traceback (most recent call last):
+...
+TypeError: object of type 'int' has no len()
+
+>>> matrix = {1, 2, 3, 4}
+>>> matrix_divided(matrix,2)
+Traceback (most recent call last):
+...
+TypeError: 'set' object is not subscriptable
+    
+    Test extra args:
+>>> matrix = [[1, 2, 3], [4, 5, 6.7]]
+>>> matrix_divided(matrix,2, 100)
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() takes 2 positional arguments but 3 were given
+
+    Test few argumets:
+>>> matrix = [[1, 2], [3, 4]]
+>>> matrix_divided(matrix)
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+    Test by zero or non-zero:
+>>> matrix = [[1, 2], [3, 4]]
+>>> matrix_divided(matrix,0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 7, in matrix_divided
+ZeroDivisionError: division by zero
+
+>>> matrix = [[1, 2], [3, 4]]
+>>> matrix_divided(matrix,"2")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 5, in matrix_divided
+TypeError: div must be a number
+
