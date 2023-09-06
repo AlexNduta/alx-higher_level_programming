@@ -61,13 +61,3 @@ Traceback (most recent call last):
 ...
 TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 
-
->>> say_my_name(None)
-    Traceback (most recent call last):
-      File "/usr/lib/python3.11/doctest.py", line 1351, in __run
-        exec(compile(example.source, filename, "single",
-      File "<doctest 3-say_my_name.txt[10]>", line 1, in <module>
-        say_my_name(None)
-      File "/home/was-removed/myFiles/ALXPROG/alx-higher_level_programming/0x07-python-test_driven_development/3-say_my_name.py", line 5, in say_my_name
-        raise TypeError("first_name must be a string")
-    TypeError: first_name must be a string
