@@ -7,6 +7,6 @@
 
 def write_file(filename="", text=""):
     """ open the file so as to read read its content """
-    with open(filename, 'w') as file:
+    with open(filename, 'r') as file:
         reading_writting = file.write(text)
         return reading_writting
