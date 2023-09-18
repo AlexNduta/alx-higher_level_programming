@@ -1,8 +1,9 @@
-#!/usr/bin/python/3
-""" 0-main"""
+#!/usr/bin/python3
+""" 0-main """
 from models.base import Base
 
 if __name__ == "__main__":
+
     b1 = Base()
     print(b1.id)
 
@@ -17,3 +18,12 @@ if __name__ == "__main__":
 
     b5 = Base()
     print(b5.id)
+
+    b6 = Base(-100)
+    print(b6.id)
+
+    b7 = Base('inf')
+    print(b7.id)
+
+    b8 = Base('NaN')
+    print(b8.id)
