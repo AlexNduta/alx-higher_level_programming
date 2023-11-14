@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const varg = parseInt(process.argv[2]);
+const varg = parseInt(process.argv[2], 10);
 
 if (isNaN(varg) || varg === undefined) {
   console.log('Missing size');
