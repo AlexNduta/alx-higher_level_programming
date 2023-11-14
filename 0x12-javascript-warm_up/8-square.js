@@ -2,7 +2,7 @@
 
 const varg = parseInt(process.argv[2], 10);
 
-if (isNaN(varg) || varg === undefined) {
+if (isNaN(varg)) {
   console.log('Missing size');
 } else {
   for (let i = 0; i < varg; i++) {
