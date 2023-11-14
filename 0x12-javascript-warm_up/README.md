@@ -36,4 +36,9 @@ A script that prints `C is fun` x times
     x is the first argument of the script
     if the first argument cannot be converted, print "Missing number of occurences"
     You must use `console.log` to print output
+## task 10
+A script that computes and prints a factorial
+    first argument is or canbe casted to an integer
+    factorial of NaN is 1
+    You must do it recursively
 
