@@ -22,4 +22,12 @@ A script that prints a message depending on the number of arguments passed:
 ## task 5:
 A script that prints: `Mynumber:<first arg to int>
     if the the argument cannot be converted to an integer, print "Not a number"
-
+## task 6:
+A script that prints 3 lines using a loop and an array of string.
+    First line: "C is fun"
+    Second line: "Python is cool"
+    Third line: "JavaScript is amazing"
+     
+     You must use one  `console.log`
+     You must use a loop(while, for etc)
+     Not allowed to use `if/else`
