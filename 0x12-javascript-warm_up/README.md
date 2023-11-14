@@ -31,3 +31,9 @@ A script that prints 3 lines using a loop and an array of string.
      You must use one  `console.log`
      You must use a loop(while, for etc)
      Not allowed to use `if/else`
+## task 7
+A script that prints `C is fun` x times
+    x is the first argument of the script
+    if the first argument cannot be converted, print "Missing number of occurences"
+    You must use `console.log` to print output
+
