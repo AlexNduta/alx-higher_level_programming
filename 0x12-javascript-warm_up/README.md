@@ -19,3 +19,7 @@ A script that prints a message depending on the number of arguments passed:
     if one argument is found, print "Argument found"
     otherwise print "Arguments found"
 
+## task 5:
+A script that prints: `Mynumber:<first arg to int>
+    if the the argument cannot be converted to an integer, print "Not a number"
+
