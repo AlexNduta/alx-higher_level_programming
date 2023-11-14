@@ -6,6 +6,6 @@ if (isNaN(varg)) {
   console.log('Missing size');
 } else {
   for (let i = 0; i < varg; i++) {
-    console.log('x'.repeat(varg));
+    console.log('X'.repeat(varg));
   }
 }
