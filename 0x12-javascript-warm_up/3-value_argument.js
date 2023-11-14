@@ -1,8 +1,12 @@
 #!/usr/bin/node
 const varg = process.argv;
 
-if (varg.length <= 2) {
-  console.log('No argument');
-} else {
-  console.log(varg[2]);
+for (let i = 2; i <= varg.length - 1; i++)
+{
+    if (varg[i] !== null)
+    {
+        console.log(varg[i]);
+    } else {
+        console.log('No argument');
+    }
 }
