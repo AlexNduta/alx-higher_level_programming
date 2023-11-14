@@ -5,6 +5,6 @@ const text = 'My number: ';
 // check if the argument is a number
 if (isNaN(argv)) {
   console.log('Not a number');
-} else if (argv !== undefined) {
+} else {
   console.log(text, argv);
 }
