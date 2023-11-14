@@ -1,10 +1,10 @@
 #!/usr/bin/node
-const varg = process.argv;
+const secondArg = process.argv[2];
 
-for (let i = 2; i <= varg.length - 1; i++) {
-  if (varg[i] !== null) {
-    console.log(varg[i]);
-  } else {
+if (secondArg === undefined)
+{
     console.log('No argument');
-  }
+  } else {
+    console.log(secondArg);
 }
+
