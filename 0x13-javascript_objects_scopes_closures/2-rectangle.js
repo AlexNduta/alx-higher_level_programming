@@ -1,17 +1,20 @@
 #!/usr/bin/node
 
-let w;
-let h;
-class Rectangle {
+module.exports = class Rectangle {
   constructor (w, h) {
+    if (w <= 0 || h <= 0){
+        module.exports = class Rectangle {}
+    }
+
     this.width = w;
     this.height = h;
   }
 }
 
 // export as a module
-if (w || h <= 0) {
+/*
+if (w <= 0 || h <= 0) {
   module.exports = class Rectangle {};
 } else {
   module.exports = Rectangle;
-}
+} */
