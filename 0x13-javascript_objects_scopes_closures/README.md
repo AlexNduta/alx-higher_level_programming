@@ -27,3 +27,9 @@ A class Rectangle that defines a rectangle.
     Create an intance method called `print()` that prints the rectangle using the character `X`
     create `rotate()` that exchanges the `width` and the `height`
     create an instance method `double()` that multiplies the `width` and the `height` of the rectangle by 2
+
+## task 5
+A class that defines a square and inherits from `Rectangle` of `4-rectangle.js
+    You must use the `class` notation for defining your class and `extends`
+    The constructor takes one argument; `size`
+    The constructor of `Rectangle` must be called using `super()`
