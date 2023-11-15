@@ -11,4 +11,10 @@ A class `Rectangle` that defines a rectangle.
     The constructor must take two arguments
     Initialize the instance attribute `width` with the value of `w`
     Initialise the instance attribute `height` with the value `h`
-
+## task 2:
+A class Rectangle that defines a rectangle.
+    You must use the class notation
+    The constructor must take two arguments
+    Initialize the intance attribute `width` with the value of `w`
+    Initialise the instance attribute `height` with the vakue of `h`
+    if `w` or `h` is equal to 0 or not a postive integer, create an empty object
