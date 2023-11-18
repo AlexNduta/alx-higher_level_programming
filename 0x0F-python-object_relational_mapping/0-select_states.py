@@ -10,3 +10,5 @@ db = MySQLdb.connect(
         )
 cur = db.cursor()
 cur.execute("SELECT states FROM hbtn_0e_0_usa")
+cur.close()
+db.close()
