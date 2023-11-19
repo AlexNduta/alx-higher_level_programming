@@ -14,16 +14,17 @@ if __name__ == "__main__":
                 port=3306,
                 user=argv[1],
                 passwd=argv[2],
-                db=argv[3],
-                name= input(argv[4])
+                db=argv[3]
+               # name= input(argv[4])
                 )
         # create a cursor
         cur = db. cursor()
 
         # start executing statements
-        cur.execute("SELECT * FROM state WHERE name='%s' ORDER BY id ASC;", (name))
+        cur.execute("SELECT * FROM state WHERE name LIKE '{:s}' ORDER BY id ASC;".format(argv[4]))
         for row  in cur.fetchall():
-            print(row)
+            if row[1] == argv[4]:
+                print(row)
     except:
         print("Error")
 
