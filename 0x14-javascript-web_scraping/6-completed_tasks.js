@@ -1,21 +1,25 @@
 #!/usr/bin/node
-//makes a GET request then prints users with completed tasks
 
+let url = process.argv[2];
 const request = require('request');
-const url = process.argv[2];
 
-request(url, function(error, response, body){
-    if (error){
-        console.log(error)
-    } else if (response.statusCode === 200) {
-       body = JSON.parse(body);
-       const output= body.results;
-       for(let i in output){
-           if (["comlepted"].value === true){
-               console.log(["id"])
-           }
-       }
-    } else {
-        console.log(response.statusCode)
+request(url, function (err, response, body) {
+  if (err) {
+    console.log(err);
+  } else if (response.statusCode === 200) {
+    let dic = {};
+    let tasks = JSON.parse(body);
+    for (let i in tasks) {
+      if (tasks[i].completed) {
+	if (dic[tasks[i].userId] === undefined) {
+	  dic[tasks[i].userId] = 1;
+	} else {
+	  dic[tasks[i].userId]++;
+	}
+      }
     }
+    console.log(dic);
+  } else {
+    console.log('Error code: ' + response.statusCode);
+  }
 });
